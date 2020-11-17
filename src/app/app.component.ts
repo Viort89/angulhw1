@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angulHW1';
+  tasks = [{
+    name: 'add angular',
+    done:  true
+  }, {
+    name: 'create todo list',
+    done: true
+  }, {
+    name: 'upload to Git',
+    done: true
+  }];
+
+  addtask() {
+    this.tasks.push({
+      name: 'new task',
+      done: false
+    });
+  }
 }
+
