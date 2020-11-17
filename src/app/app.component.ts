@@ -16,6 +16,7 @@ export class AppComponent {
     name: 'upload to Git',
     done: true
   }];
+  
 
   addtask() {
     this.tasks.push({
